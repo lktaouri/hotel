@@ -64,8 +64,9 @@ if (
         $db_obj = new mysqli($host, $user, $password, $database);
         if ($db_obj->connect_error) {
             $errors["connection"] = true;
-            exit();
             header("Refresh: 2, url=admin_profilverwaltung.php");
+
+            exit();
         }
         $id = $_POST["id"];
         $active = $_POST["active"];
