@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Reservieren</title>
+    <title>Reservierung</title>
 </head>
 
 <body>

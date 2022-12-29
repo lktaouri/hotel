@@ -16,7 +16,7 @@ session_start();
                 </li>
                 <?php if (isset($_SESSION["username"]) && !$_SESSION["admin"]) { ?>
                     <li class="nav-item">
-                        <a class="nav-link" href="reservieren.php">Reservierung</a>
+                        <a class="nav-link" href="reservierung.php">Reservierung</a>
                     </li>
                 <?php } ?>
                 <?php if (isset($_SESSION["username"]) && $_SESSION["admin"]) { ?>
@@ -24,6 +24,19 @@ session_start();
                         <a class="nav-link" href="admin_profilverwaltung.php">Profil-Verwaltung</a>
                     </li>
                 <?php } ?>
+                <?php if (isset($_SESSION["username"]) && !$_SESSION["admin"]) { ?>
+                    <li class="nav-item">
+                        <a class="nav-link" href="user_profilverwaltung.php">Mein Profil Verwaltung</a>
+                    </li>
+                <?php } ?>
+
+                <?php if (isset($_SESSION["username"]) && !$_SESSION["admin"]) { ?>
+                    <li class="nav-item">
+                        <a class="nav-link" href="eigene_reservierungen.php">Meine Reservierungen</a>
+                    </li>
+                <?php } ?>
+
+
                 <li class="nav-item">
                     <a class="nav-link" href="beiträge.php">Beiträge</a>
                 </li>
